@@ -1,0 +1,302 @@
+@charset "utf-8";
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* fORMATAÇÃO DO CABEÇALHO: cor de fundo*/
+
+header {
+    background: #BBBBBB;
+    padding: 20px 0;       /*aumentar a cor de fundo: cinza em 20px de altura e 0 de lagura */
+}
+
+/* Caixa que envolver meu logo e menu de navegação */
+.caixa {
+    position: relative; /* caixa com - Position: relative; Para o menu entra dentro dessa caixa */
+    width: 940px;       /* Tamanho dessa caixa de 940px */
+    margin: 0 auto;     /* Posição centralizada: dessa caixa, 0 de altura, lagura calculada automaticamente */
+}
+
+/* Posição do menu de navegação */
+nav {
+    position: absolute;  /* vai ficar em Position:absolute, da caixa. */ 
+    top: 110px;          /* na altura 110px */
+    right: 0px;          /* direita 0px */
+}
+
+/* Para ixibir o menu de navegação na mesma linha */
+nav li {
+    display: inline;    /*Para Ixibir o conteúdo em inline*/
+    margin: 0 0 0 15px; 
+}
+
+nav a {
+    text-transform: uppercase; /* Para transformar a letra em Maiuscula*/
+    color: #000000;          /* Cor do text preto */
+    font-weight: bold;         /* Para deixar a font: Com a cor preta forte NEGRITO  */
+    font-size: 22px;           /* Para aumentar a letra */
+    text-decoration: none;     /* Para tira qualquer decoração do meu texto: tira o sublinhado*/
+}
+
+/* Formatação de quando passar o mouse por cima do menu de navegação */
+nav a:hover {
+    color: #c78c19   /* mudar a cor para amarelo quando estiver com o mouse por cima do menu de navegação */
+}
+
+/*tamanho total que todos os produtos vão ocupar, colocar elemento centro, e separar ele do cabeçalho */
+.produtos {
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+/* formatação de cada produto quando é passado o mouse */
+.produtos li:hover {
+    border-color: #c78c19;  /* mudar a borda para amarelo quando está com o mouse por cima */
+}
+
+/* formatação de cada produto quando eu clicar no produto: mudar a cor da borda para verde */
+.produtos li:active {
+    border-color: #088c19
+}
+.produtos li:hover h2 {
+    font-size: 34px;
+}
+
+/* Formatação de cada produto: cabelo, barba e cabelo + barba */
+.produtos li {
+    display: inline-block;
+    text-align: center;    /* colocar cada: item da lista no centro - imagem, h2, p */
+    width: 30%;            /* fazer cada produto ocupar 30% da divisão estabelecida de 940px */
+    vertical-align: top;   /* ajusta a posição de cada produto na mesma linha */
+    margin: 0 1.5%;       /* aqui eu coloquei uma margem de espaço de 1.5% de cada item */
+    padding: 30px 20px; /* espaçamento interno de 30px, 20px, criei um espaço para cada item ficar separado */
+    box-sizing: border-box; /*vai adicinar espaçamento interno padding em cima dos 30% que determinei para cada item */
+    border: 2px solid #000000;  /* criar um bordar: expessura: 2px, sempre solida, na cor preta */
+    border-radius: 20px;          /* faz o arrendondamento nas pontas da borda de 20px */
+
+}
+
+/* Formatação do nome de cada produto: tamanho da fonte, fonte em negrito */
+.produtos h2 {
+    font-size: 30px ;
+    font-weight: bold;
+}
+
+/* formatação da descrição de cada produto */ 
+.produto-descricao {
+    font-size: 18px;
+}
+
+/* Formatação do preço do produto: tamanho da fonte, fonte em negrito */
+.produto-preco {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+} 
+
+/* Formatação do rodapé */
+footer {
+    text-align: center;
+    background: url(bg.jpg);
+    padding: 40px 0;
+}
+
+.copyright {
+    color: #ffffff;
+    font-size: 13px;
+    margin: 20px;
+}
+
+/* Fprmatação do Formulário */
+
+form {
+    margin: 40px 0;  /* criar um margem: uma distancia do cabeçalho */
+}
+
+/* formatação do nome do formulário */ 
+form label, form legend{
+    display: block;    /* para exibir somente a etiqueta do formulário */
+    font-size: 20px;   /* tamanho da fonte 20 px */
+    margin: 0 0 10px;  /* criar um espaço para baixo, entre o nome do formulário e o visor do formulário */
+
+}
+
+/* formatação do visor: do bloco do formulário */
+.input-padrao {
+    display: block;    /* para exebir somente o bloco do formulário na mesma linha */
+    margin: 0 0 20px;  /* criar um espaço para baixo do visor do formulário e o nome do formulário */
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.checkbox {
+    margin: 20px 0;
+}
+
+ /* Formatação do botão de enviar */
+.enviar {
+    width: 40%;
+    padding: 15px 0;
+    background: orange;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all; /* faz a transição da cor, e do tamanha em 20%  em 1s segundo */
+    cursor: pointer; /* quando o usuário passa o mause por cima mostra uma mausinha */
+}
+
+.enviar:hover {
+    background: darkorange;/* mudar botão para essa cor:quando o mouse estiver em cima */
+    transform: scale(1.2);    /*aumentar o botão em 20% quando o mouse estiver por cima */
+}
+
+/* Formatação da tabela */
+table{
+    margin: 20px 40px;
+}
+
+thead {
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+td, th{
+    border: 1px solid #000000;
+    padding: 8px 15px;
+}
+
+/* formatação da pàgina inicial */
+.banner {
+    width: 100%;
+}
+
+.principal {
+    padding: 3em 0;
+    background: #fefefe;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.titulo-principal {
+    text-align: center;
+    font-size: 2em;     /* aumentar o tamanho da fonte 2 vezes maior do que a fonte do paragrafo */
+    margin: 0 0 1em;    /* espaço para baixo do titulo */
+}
+
+.principal p {
+    margin: 0 0 1em;
+    margin: 0 0 20px 0;
+}
+
+.principal strong {
+    font-weight: bold;
+}
+
+.principal em {
+    font-style: italic;
+}
+
+.utensilios {
+    width: 120px;
+    float: left;
+    margin:  0 20px 20px 0;
+}
+
+/* Formatação do mapa */
+.mapa {
+    padding: 3em 0;
+    background: linear-gradient(#fefefe, #888888); /* cor vai começar no branco e vai terminar no cinza */
+}
+
+.mapa-conteudo {
+    width: 940px;
+    margin: 2em auto;
+}
+
+.mapa p {
+    margin: 0 0 1em;
+    text-align: center;
+}
+
+/*Formatação dos beneficios */
+.beneficios {
+    padding: 3em 0;
+    background: #888888;
+}
+
+.conteudo-beneficios {
+    width: 640px;
+    margin: 0 auto;
+}
+
+.lista-beneficios {
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.itens {
+    line-height: 1.5;  /* espaço de uma linha entre a outra: itens da lista beneficios*/ 
+}
+
+/* essa tag: é importante quando não só possivel mudar a classe, pois já tem formatação para essa classe */
+.itens:first-child{     /* pegar o primeiro item da lista: e vai transformar só ele em neglito */
+    font-weight: bold;
+}
+
+.itens:before {     /* Adicionar antes do elemento */
+    content: "★";  /* Nesse caso vai adicionar uma estrela antes de cada item da lista */
+} 
+
+.imagem-beneficios {
+    width: 60%;
+    opacity: 0.7;       /*mostra a imagem com 70% de opacidade*/
+    transition: 400ms;
+    box-shadow: 10px 10px 10px #000000;  /* adicionar  uma sombra na imagem na cor preta*/
+}
+
+.imagem-beneficios:hover {
+    opacity: 1;           /*quando o mouse estiver por cima vai mostra a imagem com 100% de opacidade*/
+}
+
+/* Formatação do video */
+.video {
+    width: 560px;
+    margin: 2em auto;
+}
+
+
+/* Formatação de tela para celular */
+@media screen and (max-width: 480px){
+    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
+        width: auto;
+    }
+    
+    header h1 {
+        text-align: center;
+    }
+
+    nav {
+        position: static;
+    }
+
+    .lista-beneficios, .imagem-beneficios {
+        width: 100%;
+    }
+
+   
+
+
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+/*Formatação da cor de fundo*/
+body{
+   
+}
+
+/*Formatação do banner: imagem*/
+#banner {
+        width: 100%;
+}
+
+.principal {
+    background: #cccccc;
+    padding: 30px;
+}
+/*formatação do titulo principal com margim exrtena*/
+.título-principal {
+    padding-left: 20px;
+}
+
+/*Formatação do Títulos: centralizado*/
+.titulo-centralizado{
+    text-align: center;
+}
+
+/*Formatação dos Paragrafos*/
+p{
+    text-align: center;
+}
+
+/*Formatação da fonte-tamanho: da frase missão*/
+#missao {
+    font-size: 20px;
+}
+
+/*Formatação da frase de destaque-- cor vermelha*/
+em strong {
+    color: red;
+}
+
+/*Formatação do menu: font italic*/
+.itens {
+    font-style: italic;
+}
+
+/*formatação do menu: cor*/
+.beneficios {
+    background: #ffffff;
+    padding: 20px;
+}
+
+/*Formatação da lista*/
+ul {
+    display: inline-block; /*Ocupa somente o espaço preenchido*/
+    vertical-align: top;   /*colocar o elemento na parte de cima*/
+    width: 20%;            /*ocupar o 20% da pagina*/
+    margin-right: 15%;     /*ocupar uma margim externa de 15%*/
+}
+
+/*Formatação do imagem beneficios*/
+.imagembeneficios {
+    width: 50%;
+    
+}

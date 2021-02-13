@@ -1,0 +1,78 @@
+@charset "UTF-8";
+body {
+    background: cornflowerblue ;
+}
+
+H1 {
+    font-size: 34px;
+    text-align: center;
+    font-weight: bold;
+    margin: 20px;
+}
+
+main {
+    width: 940px;
+    margin: 0 auto;
+    padding: 25px;
+    border: 2px solid #000000;
+    border-radius: 25px;
+    background: beige;
+}
+
+form {
+    margin: 40px 0;
+    
+}
+
+form label, form legend {
+    display: block;
+    font-size: 22px;
+    margin: 0 0 5px;
+
+}
+
+.dados-pessoais, form textarea {
+    display: block;
+    padding: 10px 25px;
+    margin: 0 0 20px ;
+    width: 50%;
+    font-size: 16px;
+}
+
+.checkbox {
+    margin: 20px 0;
+}
+
+.enviar {
+    width: 40%;
+    padding: 20px;
+    background: cornflowerblue;
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: 1s background;
+    cursor: pointer;
+}
+
+.enviar:hover {
+    background: rgb(69, 125, 230);
+}
+
+/*Formatação da tabela */
+table {
+    margin: 5px 30px;
+}
+
+thead {
+    background: cornflowerblue;
+    color: white;
+}
+
+td, th {
+    border: 1px solid black;
+    padding: 8px 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
